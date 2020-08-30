@@ -24,5 +24,10 @@ namespace Homework6ClassLibrary
         {
             return DeliveryDate.AddDays(DaysToExpire);
         }
+
+        public override string ToString()
+        {
+            return $"Name: {Name}, Price: {Price}, Delivery date: {DeliveryDate}, Days until expiration: {DaysToExpire}, Expiration date: {GetExpirationDate()}";
+        }
     }
 }
